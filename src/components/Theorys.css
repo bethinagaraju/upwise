@@ -1,0 +1,23 @@
+/* Collapsed title default: vertical, rotated on desktop */
+.collapsed-title {
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+}
+
+/* Make collapsed title horizontal on mobile (≤768px) */
+@media (max-width: 768px) {
+  .collapsed-title {
+    transform: none;
+    writing-mode: horizontal-tb;
+    white-space: normal;
+  }
+}
+
+/* Show only one card per row + decrease card height on XS screens (<500px) */
+@media (max-width: 500px) {
+  .theory-card {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    height: 250px !important;    /* Decreased height for mobile */
+  }
+}

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media (max-width: 500px) {
+  .hero-padding-xs {
+    padding-left: 0.75rem !important;  /* px-3 */
+    padding-right: 0.75rem !important; /* px-3 */
+    padding-top: 1.5rem !important;    /* py-6 */
+    padding-bottom: 1.5rem !important; /* py-6 */
+  }
+}
