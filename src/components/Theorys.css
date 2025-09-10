@@ -1,6 +1,7 @@
 /* Collapsed title default: vertical, rotated on desktop */
 .collapsed-title {
-  transform: rotate(-180deg);
+  /* transform: rotate(-180deg); */
+  transform: rotate(270deg);
   writing-mode: vertical-rl;
 }
 

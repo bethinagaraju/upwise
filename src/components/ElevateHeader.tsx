@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
-export default function IgniteHeader() {
+export default function ElevateHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -39,18 +39,18 @@ export default function IgniteHeader() {
               </li>
 
               <li>
-                <a href="/ignite" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold flex items-center">
+                <a href="#programs" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold flex items-center">
                   Ignite  {/* Changed icon color to yellow */}
                 </a>
               </li>
               <li>
-                <a href="/elevate" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold flex items-center">
+                <a href="#testimonials" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold flex items-center">
                   Elevate  {/* Changed icon color to yellow */}
                 </a>
               </li>
 
               <li>
-                <a href="/empower" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold flex items-center">
+                <a href="#" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold flex items-center">
                   Empower  {/* Changed icon color to yellow */}
                 </a>
               </li>

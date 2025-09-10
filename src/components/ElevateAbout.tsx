@@ -24,32 +24,32 @@ const styles = `
 
 const audience = [
   {
-    label: "Corporate employees across functions",
+    label: "Mid-level corporate professionals",
     img: "corporate-employees.png",
     imgBack: "professional-diverse-international-team-young-600nw-2353374147.webp",
     alt: "Corporate employees",
   },
   {
-    label: "Business analysts, MIS teams, and finance professionals",
+    label: "Cross-functional team leads",
     img: "cover.png",
     imgBack: "1736405454584business-analyst.webp",
     alt: "Business analysts",
   },
   {
-    label: "Managers, executives, and team leads",
+    label: "First-time people managers",
     img: "leadership-skills.jpg",
     imgBack: "18_5_23_HL_inexperienced_leader.avif",
     alt: "Managers and executives",
   },
   {
-    label: "Organizations adopting digital & AI tools",
+    label: "High-potential employees on leadership tracks",
     img: "types-of-organizations1.webp",
     imgBack: "IS-Feature_NERC-Compliance-and-Organization-Structure.png",
     alt: "Organizations tech",
   },
 ];
 
-const AboutSection: React.FC = () => {
+const ElevateAbout: React.FC = () => {
   return (
     <section id="about"
     style={{
@@ -75,7 +75,7 @@ const AboutSection: React.FC = () => {
             className="text-lg text-[#4a4a4a] mt-8 max-w-3xl mx-auto leading-relaxed card-animation"
             style={{ animationDelay: '0.4s' }}
           >
-            Ignite is a hands-on, results-driven training program that helps professionals master Microsoft tools and harness the power of AI in daily work. Designed for corporate teams, Ignite upskills your workforce in Excel, PowerPoint, Outlook, Word, Teams, and Power BI — integrated with AI tools like ChatGPT and Copilot for next-level productivity.
+            Elevate is Upwise’s signature corporate soft skills program for mid-career professionals, team leads, and first-time managers. It builds on foundational behaviors and dives deeper into leadership presence, ownership, cross-functional collaboration, and business impact — preparing professionals to lead with confidence and competence.
           </p>
         </div>
         {/* Section 2: Audience Overlap Cards - LEFT OVERLAP */}
@@ -113,4 +113,4 @@ const AboutSection: React.FC = () => {
   );
 };
 
-export default AboutSection;
+export default ElevateAbout;

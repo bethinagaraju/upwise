@@ -631,6 +631,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { image } from 'framer-motion/client';
 
 const Testimonials: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -677,7 +678,142 @@ const Testimonials: React.FC = () => {
       image: 'ddsills1.png',
       rating: 5,
       text: 'Ritu Arora was our trainer in imparting excel skills to us. She is really an excellent trainer, who possesses enough knowledge on excel. Her teaching methodology is quite systematic, easy learning & example based which enabled us to grasp the excel skills in a very short time. I really appreciate her & look forward to learning more in future.'
-    }
+    },
+    {
+      name: 'Zach Quast',
+      role: ' Business Development',
+      company: 'Lineage',
+      image: 'picid1.jpg',
+      rating: 5,
+      text: 'I recently completed Ritu’s virtual seminar, "Excelerate Your Skills with Advanced Excel Functions," and it was an incredibly valuable experience. I thought I had a good understanding of Excel basics, but Ritu’s insights and techniques elevated my skills to a whole new level. The tips and shortcuts she shared have already made me more efficient—not just in Excel but in other programs as well.'
+    },
+    {
+      name: 'Shambavi Vaidiyanathan',
+      role: 'Risk Data Analyst',
+      company: 'Mosaic Insurance',
+      image: 'picid2.jpg',
+      rating: 5,
+      text: 'Rithu Ma\'am has been so helpful, kind and patient as a teacher. I feel so much more confident and equipped with Excel within the first few classes. She is such a lovely teacher and would recommend her to anyone who wants to an expert of excel and successfully navigate all of its powerful tools. :)'
+    },
+    {
+      name: 'Rinku Patel',
+      role: 'Global OHS Coordinator',
+      company:'Teleperformance Group',
+      image: 'picid3.jpg',
+      rating: 5,
+      text : 'Experienced Safety Manager with a demonstrated history of working in the outsourcing/offshoring industry. Skilled in Coaching, Training Needs Analysis, Team Building, Contact Centers, and Training Delivery. Strong operations professional with a Bachelor of Arts (B.A.) focused in Sociology from Sikkim Manipal University - Distance Education.'
+    },
+    {
+      name: ' Raman Mishra',
+      role: 'Driving Digital Media Excellence',
+      company: 'Emami Limited',
+      image: 'picid4.jpg',
+      rating: 5,
+      text: 'Ritu is on point when it comes to keeping a knowledge session crisp. I had attended one of her session in my previous organisation and I still carry those learning’s with me.'
+    },
+    {
+      name: 'Siddhesh Shinde',
+      role: 'Manager - Technical',
+      company: 'HDFC Bank || Architect',
+      image : 'picid5.jpg',
+      rating: 5,
+      text: 'Thank you Ritu ma’am for a great Excel workshop.   Great presentation style with lots of opportunities to ask queries. I have learned many new tools and how to work smartly. i recommend every Student and employee to go through this workshop.'
+    },
+    {
+      name: 'Nidhi Mehra',
+      role: 'CHRO',
+      company: 'HONO',
+      image: 'picid6.jpg',
+      rating: 5,
+      text: 'Ritu is an excellent Trainer. Have attended her Microsoft Excel and Presentation session. She does Magic to both the excel and presentation. She also shares lots of tips and tricks which makes work faster and easier. Personally one of favourite trainer. Thank you for making it so simple for us. God bless!!'
+    },
+    {
+      name: 'Pratyush Raj Samal',
+      role: 'Financial Planning and Analysis',
+      company: 'Hitachi Energy',
+      image: 'picid7.jpg',
+      rating: 5,
+      text: 'Ritu demonstrated a deep knowledge in excel workings and shared her expertise in a pleasant and comprehensible manner. Although the training session lasted for a few days only, I have learnt from her more than I could expect. Her patience to attend each and everyone’s questions is something I will always value.'
+    },
+    {
+      name: 'Rashmeet Saluja',
+      role: 'Finance Manager',
+      company: 'Mimecast',
+      image: 'picid8.jpg',
+      rating: 5,
+      text: 'Ritu mam is a great teacher with a lot of knowledge on advanced excel. She handles questions with a lot of patience!'
+    },
+     {
+      name: 'Abdul Hadi Khan',
+      role: 'General Manager Marketing',
+      company: 'India Expo Mart Ltd.',
+      image: 'picid9.jpg',
+      rating: 5,
+      text: 'It was really informative and was able to learn new skills which I may use in my professional carrier. I must thank rituji for being patient with us and resolving all our queries.'
+    },
+
+    {
+      name: 'Sameer Siddiqui',
+      role: 'Corporate Training Manager',
+      company: 'Danube',
+      image: 'picid10.jpg',
+      rating: 5,
+      text: 'I have attended an online session delivered by Ritu and found it very helpful for my Assignments. In a session of almost 8 hours, the audience never felt exhausted. Thanks Ritu for a power packed session.'
+    },
+
+    {
+      name: 'Chetan Patel',
+      role: 'HR Head',
+      company: 'ASTRA POLYMERS',
+      image: 'picid11.jpg',
+      rating: 5,
+      text: 'Hello Mam, being a corporate professional working with PowerPoint and Excel is very much essential on daily basis. So it was a great leading worship for me which is going to be helpful me in my personal as well as professional carrer.\n\nSo I feel proud to attend this training for 4 days because I had learn many new techniques, shortcuts & some formulas. I will delivered good results in my organisation by utilising all the learning’s during last 4 days.\n\nThanks a lot mam for the wonderful session.'
+    },
+    {
+      name: 'Mansi Ahuja',
+      role: 'Senior Key Account Manager',
+      company: 'CarTrade Tech',
+      image: 'picid12.jpg',
+      rating: 5,
+      text: 'Ritu, has great knowledge of PPT and Excel. She recently came to Radio Mirchi for training and it was just fantastic. She has a great knowledge and expertise !!!'
+    },
+
+    {
+      name: 'Riti Goswami',
+      role: 'Deputy Manager',
+      company: 'Radio Mirchi',
+      image: 'picid13.jpg',
+      rating: 5,
+      text: 'I have attended the MS-Excel & MS-PPT training in my company which was given by Ms. Ritu Arora and I\'m extremely thankful to her for this training. The session has cleared alot of my doubts and taught me so many new and insightful things. Her training style is very interactive and she\'s very patient with everyone. :)'
+    },
+
+    {
+      name: 'Palak Kumra',
+      role: 'Senior Brand Manager',
+      company: 'boAt lifestyle',
+      image: 'picid14.jpg',
+      rating: 5,
+      text: 'I attended Microsoft Excel workshop by Ritu in my company. She taught us about excel in depth and with so much calmness. Her teaching method was very interactive and informative. I got to learn so much from her session! I\'m glad that I attended her session. Looking forward to more such sessions with her :)'
+    },
+
+     {
+      name: 'Lakshay Madan',
+      role: 'Accountant Manager',
+      company: 'Entertainment Network India Ltd',
+      image: 'picid15.jpg',
+      rating: 5,
+      text: 'It was a great experience attending her training on PowerPoint. She is an expert in the domain. Got to learn various new tools which i hope will come handy in my field of work.'
+    },
+
+    {
+      name: 'SAJIB DHAR',
+      role: 'Manager - Digital Ad Revenue',
+      company: 'Bookmyshow',
+      image: 'picid16.jpg',
+      rating: 5,
+      text: 'It is not an easy task to handle and train people from different domain and different level of hierarchy in same session. Ritu handled that with ease. She has covered most important tools of Ms excel in a interactive, engaging and fun way. I thank her for conducting such a session.'
+    },
+
   ];
 
   useEffect(() => {

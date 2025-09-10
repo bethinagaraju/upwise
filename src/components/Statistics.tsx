@@ -270,7 +270,7 @@ export default function Statistics(): JSX.Element {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
           <Stat number={100} suffix="%" label="Satisfaction rate"/>
           <Stat number={96} suffix="%" label="Highest Program Completion" />
-          <Stat number={4.5} label="Course Feedback Rating from" subLabel="30,000+ course completions" decimals={1} />
+          <Stat number={4.9} label="Course Feedback Rating from" subLabel="30,000+ course completions" decimals={1} />
         </div>
 
         <div className="flex justify-center">

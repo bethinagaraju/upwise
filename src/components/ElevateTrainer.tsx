@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const AboutUs: React.FC = () => {
+const ElevateTrainer: React.FC = () => {
   return (
     <section id="about-us" className="py-24  bg-white overflow-hidden relative" style={{           background: '#f89763',         }}>
       {/* Background Accent Circles */}
@@ -40,20 +40,20 @@ const AboutUs: React.FC = () => {
           className="lg:w-1/2"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-deep-navy-800 mb-6">
-            Meet <span className="bg-gradient-to-r from-[#ffffff] to-[#ffffff] bg-clip-text text-transparent">Upwise</span>
+            Meet <span className="bg-gradient-to-r from-[#ffffff] to-[#ffffff] bg-clip-text text-transparent">Our Trainer</span>
           </h2>
 
           <p className="text-lg text-soft-grey-700 leading-relaxed mb-6">
-            Upwise is a modern professional development brand founded by <strong className="text-[#ffffff]">Ritu Arora</strong> a seasoned corporate trainer and author with over 20 years of experience. Guided by her people-first approach, Upwise delivers impactful upskilling experiences that empower professionals to thrive with confidence and clarity.
+            <strong className="text-[#ffffff]">Dr. Garima Bansal</strong> is an award-winning leadership coach and corporate facilitator, with 18+ years of experience working with top organizations like ISRO, NTPC, IBM, Adani, and Wipro. Her sessions are known for being immersive, insightful, and deeply practical — combining NLP, coaching, and business psychology to enable lasting transformation.
           </p>
 
-          <p className="text-lg text-soft-grey-700 leading-relaxed">
+          {/* <p className="text-lg text-soft-grey-700 leading-relaxed">
             Our mission is to build a future-ready workforce by combining strategic learning design, compelling content, and a distinct brand identity rooted in trust, performance, and growth. We support B2B and digital expansion through clear positioning and a consistent visual and verbal language.
-          </p>
+          </p> */}
         </motion.div>
       </div>
     </section>
   );
 };
 
-export default AboutUs;
+export default ElevateTrainer;
