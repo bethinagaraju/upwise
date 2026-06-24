@@ -9,11 +9,14 @@ import Gallery from './pages/Gallery';
 import Empower from './pages/Empower';
 import Elevate from './pages/Elevate';
 
+import AdvanceExcelCourse from './coursespage/AdvanceExcelCourse';
+
 
 function App() {
   return (
     <BrowserRouter>
     <ScrollToTop/>
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ignite" element={<Ignite />} />
@@ -21,7 +24,10 @@ function App() {
         <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/empower' element={<Empower/>}/>
         <Route path='/elevate' element={<Elevate/>}/>
+
+        <Route path='/advance-excel-course' element={<AdvanceExcelCourse/>}/>
       </Routes>
+
     </BrowserRouter>
   );
 }

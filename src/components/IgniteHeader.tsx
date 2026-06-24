@@ -79,9 +79,9 @@ export default function IgniteHeader() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <a href="/" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Home</a>
-              <a href="#programs" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Ignite</a>
-              <a href="#testimonials" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Elevate</a>
-              <a href="#" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Empower</a>
+              <a href="/ignite" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Ignite</a>
+              <a href="/elevate" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Elevate</a>
+              <a href="/empower" className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">Empower</a>
               {/* <a href="#contact">
               <button className="w-full mt-3 bg-[#009bea] text-white px-6 py-2 rounded-md hover:bg-[#0088d1] transition-colors font-semibold rounded-lg">
                 Contact Us

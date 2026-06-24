@@ -155,8 +155,8 @@ export default function Programs() {
   const programs: Program[] = [
     {
       title: "IGNITE",
-      subtitle: "IT & AI Skills - Excel and Power BI skills   ",
-      image: "girlai.png",
+      subtitle: "IT & AI Skills - Excel, PowerPoint & Presenting with Impact, Microsoft Office + AI Tools",
+      image: "Gemini_Generated_Image_xvx7hxvx7hxvx7hx-removebg-preview01.png",
       logoImage:
         "https://us.harappa.education/wp-content/themes/harappaeducation/src/images/us-pages/program-logo.png",
       bottomBandColorClass: "bg-[#f89763]",
@@ -166,8 +166,8 @@ export default function Programs() {
     {
       title: "ELEVATE",
       subtitle:
-        "Soft Skills - communication, leadership, emotional intelligence",
-      image: "girlai.png",
+        "Soft Skills - Communication Excellence, Emotional Intelligence, Business Etiquette",
+      image: "Gemini_Generated_Image_uzb9xiuzb9xiuzb9-removebg-preview.png",
       logoImage:
         "https://us.harappa.education/wp-content/themes/harappaeducation/src/images/us-pages/program-logo.png",
       bottomBandColorClass: "bg-[#f89763]",
@@ -177,8 +177,8 @@ export default function Programs() {
     {
       title: "EMPOWER",
       subtitle:
-        "POSH & Compliance - knowledge of rights, safe workplaces",
-      image: "girlai.png",
+        "POSH & Compliance - ICC/IC Training, Leadership Sensitization, Custom Legal Workshops",
+      image: "WhatsApp_Image_2025-09-14_at_13.38.46_b2dee5da-removebg-preview.png",
       logoImage:
         "https://us.harappa.education/wp-content/themes/harappaeducation/src/images/us-pages/program-logo.png",
       bottomBandColorClass: "bg-[#f89763]",
@@ -219,11 +219,12 @@ export default function Programs() {
               className="flex flex-col rounded-lg overflow-hidden shadow-lg group cursor-pointer"
             >
               <div className="relative h-[380px]">
-                <img
+                <motion.img
                   src={p.image}
                   alt={p.title}
                   className="absolute inset-0 w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
 
                 <div

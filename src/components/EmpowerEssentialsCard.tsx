@@ -251,7 +251,7 @@ const EmpowerEssentialsCard: React.FC = () => {
     {
       title: 'POSH Awareness for Employees',
       duration: '1–2 hrs',
-      img: 'basic to advance excel.png', // reused old images
+      img: 'Gemini_Generated_Image_2lm8vl2lm8vl2lm8.png', // reused old images
       bgColor: 'bg-[#f89763]',
       hoverColor: 'hover:bg-[#f89763]/90',
       brochure: 'cover.png',
@@ -264,10 +264,10 @@ const EmpowerEssentialsCard: React.FC = () => {
     {
       title: 'ICC/IC Training',
       duration: 'Half-Day or Full-Day',
-      img: 'advanced excel super champion.png',
+      img: 'Gemini_Generated_Image_o5dnllo5dnllo5dn.png',
       bgColor: 'bg-[#f89763]',
       hoverColor: 'hover:bg-[#f89763]/90',
-      brochure: 'cover.png',
+      brochure: 'Gemini_Generated_Image_o5dnllo5dnllo5dn.png',
       features: [
         'Roles and powers of the Internal Committee',
         'How to conduct inquiries and documentation',
@@ -277,7 +277,7 @@ const EmpowerEssentialsCard: React.FC = () => {
     {
       title: 'Leadership Sensitization',
       duration: 'Custom Duration',
-      img: 'data visualization.png',
+      img: 'Gemini_Generated_Image_xcvardxcvardxcva.png',
       bgColor: 'bg-[#f89763]',
       hoverColor: 'hover:bg-[#f89763]/90',
       brochure: 'cover.png',
@@ -290,7 +290,7 @@ const EmpowerEssentialsCard: React.FC = () => {
     {
       title: 'Workplace Conduct & Gender Sensitization',
       duration: 'Custom Duration',
-      img: 'microsoft word.png',
+      img: 'Gemini_Generated_Image_dpf9xsdpf9xsdpf9.png',
       bgColor: 'bg-[#f89763]',
       hoverColor: 'hover:bg-[#f89763]/90',
       brochure: 'cover.png',
@@ -303,7 +303,7 @@ const EmpowerEssentialsCard: React.FC = () => {
     {
       title: 'Custom Legal Workshops',
       duration: 'Custom Duration',
-      img: 'powerpoint.png',
+      img: 'Gemini_Generated_Image_5jldi65jldi65jld(1).png',
       bgColor: 'bg-[#f89763]',
       hoverColor: 'hover:bg-[#f89763]/90',
       brochure: 'cover.png',
@@ -330,12 +330,13 @@ const EmpowerEssentialsCard: React.FC = () => {
             <img
               src={card.img}
               alt={card.title}
-              className="w-full object-cover h-60"
+              className="w-full object-contain h-60 Lazyload"
+              
             />
-            <div className="absolute top-3 left-3 bg-white px-3 py-1 text-sm font-semibold shadow rounded flex items-center gap-1">
+            {/* <div className="absolute top-3 left-3 bg-white px-3 py-1 text-sm font-semibold shadow rounded flex items-center gap-1">
               <Clock className="w-4 h-4 text-[#f89763]" />
               {card.duration}
-            </div>
+            </div> */}
           </div>
 
           <div className="flex items-center justify-center gap-24 px-4 py-2">

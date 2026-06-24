@@ -24,7 +24,8 @@ const AboutUs: React.FC = () => {
     <img
       src="ritu.png"
       alt="Ritu Arora"
-      className="rounded-xl object-cover w-3/4 h-auto mx-auto"
+      className="rounded-xl object-cover w-3/4 h-auto mx-auto lazyload"
+     
     />
   </div>
 </motion.div>

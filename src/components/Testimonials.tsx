@@ -922,6 +922,7 @@ const Testimonials: React.FC = () => {
                       src={testimonial.image}
                       alt={testimonial.name}
                       className="w-14 h-14 rounded-full object-cover"
+                      loading="lazy"
                     />
                     <div>
                       <div className="font-semibold text-gray-900">{testimonial.name}</div>

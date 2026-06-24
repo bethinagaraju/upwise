@@ -46,7 +46,7 @@ export default function Header() {
                 </button>
 
                 {/* Dropdown */}
-                <div className="absolute left-0 mt-2 w-40 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition opacity duration-200">
+                <div className="absolute left-0 w-40 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition opacity duration-200">
                   <ul className="py-2">
                     <li>
                       <a
@@ -147,13 +147,13 @@ export default function Header() {
                   Ignite
                 </a>
                 <a
-                  href="#"
+                  href="/elevate"
                   className="block pl-6 py-2 text-gray-600 hover:text-blue-600"
                 >
                   Elevate
                 </a>
                 <a
-                  href="#"
+                  href="/empower"
                   className="block pl-6 py-2 text-gray-600 hover:text-blue-600"
                 >
                   Empower

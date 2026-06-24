@@ -167,11 +167,11 @@ const ExcelEssentialsCard: React.FC = () => {
             <img
               src={card.img}
               alt={card.title}
-              className="w-full object-cover h-60"
+              className="w-full object-contain h-60 lazyload"
             />
-            <div className="absolute top-3 left-3 bg-white px-3 py-1 text-sm font-semibold shadow rounded">
+            {/* <div className="absolute top-3 left-3 bg-white px-3 py-1 text-sm font-semibold shadow rounded">
               ⭐ 4.8/5 Rating | 5000+ Enrolled
-            </div>
+            </div> */}
           </div>
 
           <div className="flex items-center justify-center gap-24 px-4 py-2">

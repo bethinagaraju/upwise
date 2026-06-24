@@ -22,9 +22,9 @@ const ElevateTrainer: React.FC = () => {
 >
   <div className="bg-white rounded-2xl border-4 border-[rgba(248,151,99,255)] p-1 shadow-2xl">
     <img
-      src="ritu.png"
+      src="Gemini_Generated_Image_uzb9xiuzb9xiuzb9-removebg-preview.png"
       alt="Ritu Arora"
-      className="rounded-xl object-cover w-3/4 h-auto mx-auto"
+      className="rounded-xl object-cover w-3/4 h-auto mx-auto Lazyload"
     />
   </div>
 </motion.div>

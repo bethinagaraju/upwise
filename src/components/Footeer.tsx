@@ -130,15 +130,15 @@
 //                 <div className="space-y-4">
 //                   <div className="flex items-center gap-3 text-soft-grey-300">
 //                     <Mail size={20} className="text-warm-coral-400" />
-//                     <span>hello@upwise.training</span>
+//                     <span>support@upwisetraining.com</span>
 //                   </div>
 //                   <div className="flex items-center gap-3 text-soft-grey-300">
 //                     <Phone size={20} className="text-warm-coral-400" />
-//                     <span>+1 (555) 123-4567</span>
+//                     <span>98916 28225</span>
 //                   </div>
 //                   <div className="flex items-center gap-3 text-soft-grey-300">
 //                     <MapPin size={20} className="text-warm-coral-400" />
-//                     <span>Global Training Services</span>
+//                     <span>E-119 Sector 41, Noida- 201303</span>
 //                   </div>
 //                 </div>
 //               </motion.div>
@@ -263,11 +263,10 @@ const Footeer: React.FC = () => {
     {
       title: 'Programs',
       links: [
-        { name: 'Excel Training', href: '#' },
-        { name: 'PowerPoint Mastery', href: '#' },
-        { name: 'Communication Skills', href: '#' },
-        { name: 'Train the Trainer', href: '#' },
-        { name: 'Custom Solutions', href: '#' }
+        { name: 'Ignite', href: '#' },
+        { name: 'Elevate', href: '#' },
+        { name: 'Empower', href: '#' },
+   
       ]
     },
     {
@@ -385,15 +384,15 @@ const Footeer: React.FC = () => {
                 <div className="space-y-4">
                   <div className={`flex items-center gap-3 text-[${colors.softGrey[300]}]`}>
                     <Mail size={20} className={`text-[${colors.warmCoral[400]}]`} />
-                    <span>hello@upwise.training</span>
+                    <span>support@upwisetraining.com</span>
                   </div>
                   <div className={`flex items-center gap-3 text-[${colors.softGrey[300]}]`}>
                     <Phone size={20} className={`text-[${colors.warmCoral[400]}]`} />
-                    <span>+1 (555) 123-4567</span>
+                    <span>98916 28225</span>
                   </div>
                   <div className={`flex items-center gap-3 text-[${colors.softGrey[300]}]`}>
                     <MapPin size={20} className={`text-[${colors.warmCoral[400]}]`} />
-                    <span>Global Training Services</span>
+                    <span>E-119 Sector 41, Noida- 201303</span>
                   </div>
                 </div>
               </motion.div>
