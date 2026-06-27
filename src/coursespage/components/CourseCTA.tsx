@@ -174,14 +174,24 @@ const courses = [
   "Data Analytics",
 ];
 
-const CourseCTA: React.FC = () => {
+interface CourseCTAProps {
+  courseName?: string;
+  brochureUrl?: string;
+  brochureName?: string;
+}
+
+const CourseCTA: React.FC<CourseCTAProps> = ({
+  courseName = "Advanced Excel",
+  brochureUrl = "/Gemini_Generated_Image_2lm8vl2lm8vl2lm8.png",
+  brochureName = "Advanced-Excel-Brochure.png",
+}) => {
   const [showEnrollModal, setShowEnrollModal] = useState(false);
   const [showBrochureModal, setShowBrochureModal] = useState(false);
 
   const [enrollData, setEnrollData] = useState({
     name: "",
     phone: "",
-    course: "",
+    course: courseName,
   });
 
   const [brochureData, setBrochureData] = useState({
@@ -230,7 +240,7 @@ const CourseCTA: React.FC = () => {
     setEnrollData({
       name: "",
       phone: "",
-      course: "",
+      course: courseName,
     });
 
     setShowEnrollModal(false);
@@ -251,9 +261,8 @@ const CourseCTA: React.FC = () => {
     // TODO: Call your API here
 
     const link = document.createElement("a");
-    link.href =
-      "/Gemini_Generated_Image_2lm8vl2lm8vl2lm8.png";
-    link.download = "Advanced-Excel-Brochure.png";
+    link.href = brochureUrl;
+    link.download = brochureName;
 
     document.body.appendChild(link);
     link.click();
@@ -272,11 +281,11 @@ const CourseCTA: React.FC = () => {
       <section className="py-20 bg-gradient-to-r from-[#f07b51] to-[#ff9b73]">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Master Advanced Excel?
+            Ready to Master {courseName}?
           </h2>
 
           <p className="text-white/90 text-lg max-w-2xl mx-auto mb-10">
-            Transform your Excel skills with hands-on projects,
+            Transform your {courseName} skills with hands-on projects,
             real-world case studies, and expert-led training.
           </p>
 

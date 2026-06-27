@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { 
-  Flame, 
-  Target, 
-  Users, 
-  CheckCircle, 
-  BarChart3, 
-  FileSpreadsheet, 
-  Presentation, 
+import {
+  Flame,
+  Target,
+  Users,
+  CheckCircle,
+  BarChart3,
+  FileSpreadsheet,
+  Presentation,
   MessageSquare,
   Clock,
   Award,
@@ -136,30 +136,30 @@ function Elevate() {
 
   return (
     <div className="min-h-screen bg-white">
-  
+
 
       {/* <Header/>
       <ElevateHeader/> */}
-      <IgniteHeader/>
+      <IgniteHeader />
 
-      
+
 
       {/* <HeroSection/> */}
-      <ElevateHero/>
+      <ElevateHero />
 
 
 
 
-      
+
 
       {/* <AboutSection/> */}
-      <ElevateAbout/>
+      <ElevateAbout />
 
-        <ElevateEssentialsCard/>
+      <ElevateEssentialsCard />
       {/* <ExcelEssentialsCard/> */}
 
 
-      <ElevateTrainer/>
+      <ElevateTrainer />
 
       {/* Delivery Options */}
       <section style={{ background: 'radial-gradient(circle at center, #ffffffff, #f8976334)' }} className="py-16">
@@ -168,26 +168,26 @@ function Elevate() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#f89763] mb-4">Delivery Options</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-white via-white-500 to-orange-white mx-auto"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:scale-105 transition duration-300 ease-in-out">
               <Users className="w-12 h-12 text-blue-500 mx-auto mb-4" />
               <h3 className="text-lg font-bold text-[#f89763] mb-2">In-person Training</h3>
               <p className="text-gray-600">On-site corporate training at your office</p>
             </div>
-            
+
             <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:scale-105 transition duration-300 ease-in-out">
               <Globe className="w-12 h-12 text-green-500 mx-auto mb-4" />
               <h3 className="text-lg font-bold text-[#f89763] mb-2">Virtual Live Training</h3>
               <p className="text-gray-600">Interactive online sessions with real-time support</p>
             </div>
-            
+
             <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:scale-105 transition duration-300 ease-in-out">
               <Building2 className="w-12 h-12 text-orange-500 mx-auto mb-4" />
               <h3 className="text-lg font-bold text-[#f89763] mb-2">Custom Corporate Batches</h3>
               <p className="text-gray-600">Tailored programs for your organization</p>
             </div>
-            
+
             <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:scale-105 transition duration-300 ease-in-out">
               <Clock className="w-12 h-12 text-purple-500 mx-auto mb-4" />
               <h3 className="text-lg font-bold text-[#f89763] mb-2">Flexible Durations</h3>
@@ -197,12 +197,12 @@ function Elevate() {
         </div>
       </section>
 
-     
 
 
-     
-     <footer style={{ borderTop: '3px solid #f89763' }}>
-      <Footer/>
+
+
+      <footer style={{ borderTop: '3px solid #f89763' }}>
+        <Footer />
       </footer>
     </div>
   );

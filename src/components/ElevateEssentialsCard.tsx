@@ -1,6 +1,7 @@
 
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Clock } from 'lucide-react';
 import ContactPopup from './ContactPopup';
 
@@ -30,6 +31,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/new-manager-program-course',
     features: [
       'Foundation skills for new managers',
       'Managing teams and performance',
@@ -42,6 +44,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/women-leadership-program-course',
     features: [
       'Building executive presence and confidence',
       'Assertiveness, influencing, and impact',
@@ -54,6 +57,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/innovation-creative-thinking-course',
     features: [
       'Structured & design thinking models',
       'Tools for ideation and breakthroughs',
@@ -66,6 +70,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/executive-presence-course',
     features: [
       'Build influence and gravitas',
       'Command attention in leadership roles',
@@ -78,6 +83,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/business-etiquette-course',
     features: [
       'Professional presence and grooming',
       'Email, meeting, and workplace etiquette',
@@ -90,6 +96,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/organizational-talent-development-course',
     features: [
       'Succession planning & L&D interventions',
       'Capability and skills assessments',
@@ -102,6 +109,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/communication-excellence-course',
     features: [
       'Clarity and impact: written, spoken, non-verbal',
       'Effective feedback and presentations',
@@ -114,6 +122,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/diversity-equity-inclusion-course',
     features: [
       'Awareness of unconscious bias',
       'Inclusive language and practices',
@@ -126,6 +135,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/emotional-intelligence-course',
     features: [
       'Self-awareness and empathy building',
       'Sensitivity and social skills',
@@ -138,6 +148,7 @@ const cards = [
     bgColor: 'bg-[#f89763]',
     hoverColor: 'hover:bg-[#f89763]/90',
     brochure: 'cover.png',
+    link: '/team-building-collaboration-course',
     features: [
       'Fostering trust and unity',
       'Experiential workshops for cross-teams',
@@ -148,89 +159,88 @@ const cards = [
 
 const ElevateEssentialsCard: React.FC = () => {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
+  const navigate = useNavigate();
 
   const toggleCard = (index: number) => {
     setExpandedCard(prev => (prev === index ? null : index));
   };
   const [showPopup, setShowPopup] = useState(false);
-const [selectedBrochure, setSelectedBrochure] = useState("");
+  const [selectedBrochure, setSelectedBrochure] = useState("");
 
   return (
-    <div style={{ background: "radial-gradient(circle at center, #ffffffff, #f8976334)" }} className="flex flex-wrap justify-center gap-12 p-12 py-24">
-      <style>{styles}</style>
-      {cards.map((card, index) => (
-        <div
-          key={index}
-          className="w-[350px] bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 card-hover"
-        >
-          <div className="relative">
-            <img
-              src={card.img}
-              alt={card.title}
-              className="w-full object-contian h-60 Lazyload"
-            />
-           
-          </div>
-
-          <div className="flex items-center justify-center gap-24 px-4 py-2">
-            <h2 className="text-xl font-bold text-[#f89763]">{card.title}</h2>
-          </div>
-          <div className="px-4 pb-3 text-center">
-            {expandedCard === index ? (
-              <>
-                <ul className="list-disc list-inside text-left text-gray-700 text-sm space-y-1 mb-3">
-                  {card.features.map((item, i) => (
-                    <li
-                      key={i}
-                      className="feature-animate"
-                      style={{ animationDelay: `${0.15 * i + 0.1}s` }}
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                {/* <a
-                  href={card.brochure}
-                  download={`${card.title.replace(/ /g, '')}Brochure.png`}
-                  className={`inline-block px-4 py-2 text-white rounded ${card.bgColor} ${card.hoverColor} transition`}
-                >
-                  Download Brochure
-                </a> */}
-                <button
-  onClick={() => {
-    setSelectedBrochure(card.brochure);
-    setShowPopup(true);
-  }}
-  className={`inline-block px-4 py-2 text-white rounded ${card.bgColor} ${card.hoverColor}`}
->
-  Download Brochu
-</button>
-              </>
-            ) : (
-              <button
-                onClick={() => toggleCard(index)}
-                className={`px-6 py-2 text-white rounded ${card.bgColor} ${card.hoverColor} transition`}
-              >
-                Learn More
-              </button>
-            )}
-          </div>
-        </div>
-      ))}
-    </div>
-    
-  );
     <>
-    <div className="flex flex-wrap justify-center gap-12 p-12 py-24">
-      {/* Cards */}
-    </div>
+      <div style={{ background: "radial-gradient(circle at center, #ffffffff, #f8976334)" }} className="flex flex-wrap justify-center gap-12 p-12 py-24">
+        <style>{styles}</style>
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            className="w-[350px] bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200 card-hover"
+          >
+            <div className="relative">
+              <img
+                src={card.img}
+                alt={card.title}
+                className="w-full object-contain h-60 lazyload"
+              />
+            </div>
 
-    <ContactPopup
-      isOpen={showPopup}
-      onClose={() => setShowPopup(false)}
-      brochure={selectedBrochure}
-    />
-  </>
+            <div className="flex items-center justify-center gap-24 px-4 py-2">
+              <h2 className="text-xl font-bold text-[#f89763]">{card.title}</h2>
+            </div>
+            <div className="px-4 pb-3 text-center">
+              {expandedCard === index ? (
+                <>
+                  <ul className="list-disc list-inside text-left text-gray-700 text-sm space-y-1 mb-3">
+                    {card.features.map((item, i) => (
+                      <li
+                        key={i}
+                        className="feature-animate"
+                        style={{ animationDelay: `${0.15 * i + 0.1}s` }}
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex flex-col gap-2">
+                    <button
+                      onClick={() => {
+                        setSelectedBrochure(card.brochure);
+                        setShowPopup(true);
+                      }}
+                      className={`inline-block w-full px-4 py-2 text-white rounded font-semibold text-sm ${card.bgColor} ${card.hoverColor} transition`}
+                    >
+                      Download Brochure
+                    </button>
+                    {card.link && (
+                      <button
+                        onClick={() => navigate(card.link)}
+                        className="inline-block w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded font-semibold text-sm transition"
+                      >
+                        View Details
+                      </button>
+                    )}
+                  </div>
+                </>
+              ) : (
+                <button
+                  onClick={() => toggleCard(index)}
+                  className={`px-6 py-2 text-white rounded ${card.bgColor} ${card.hoverColor} transition`}
+                >
+                  Learn More
+                </button>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <ContactPopup
+        isOpen={showPopup}
+        onClose={() => setShowPopup(false)}
+        brochure={selectedBrochure}
+      />
+    </>
+  );
 };
 
 export default ElevateEssentialsCard;
